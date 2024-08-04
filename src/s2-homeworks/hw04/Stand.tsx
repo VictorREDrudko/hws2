@@ -4,10 +4,17 @@ import SuperInputText from './common/c1-SuperInputText/SuperInputText'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 import SuperButton from './common/c2-SuperButton/SuperButton'
 
+/*
+* 1 - понять (и простить) SuperInputText
+* 2 - в зависимости от типа и дизэйбла прицепить нужный класс в SuperButton.tsx (строка 21)
+* 3 - дописать onChangeCallback в SuperCheckbox.tsx чтоб оба чекбокса работали на стенде
+* 4 - сделать стили в соответствии с дизайном
+* */
+
 const Stand = () => {
+  // States
     const [stateForAllInputs, setValue] = useState<string>('')
     const [error, setError] = useState<string>('')
-
     const [stateForAllCheckboxes, setChecked] = useState<boolean>(false)
 
     return (
@@ -15,11 +22,11 @@ const Stand = () => {
             <div className={s.inputs}>
                 {/*совместим со старым кодом:*/}
                 <div>
-                    <SuperInputText
-                        id={'hw4-super-input-like-old'}
-                        value={stateForAllInputs}
-                        onChange={(e) => setValue(e.currentTarget.value)}
-                    />
+                  <SuperInputText
+                      id={'hw4-super-input-like-old'}
+                      value={stateForAllInputs}
+                      onChange={(e) => setValue(e.currentTarget.value)}
+                  />
                 </div>
                 {/*инпут с ошибкой:*/}
                 <div>

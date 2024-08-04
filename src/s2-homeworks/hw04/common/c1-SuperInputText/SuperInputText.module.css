@@ -1,20 +1,35 @@
 .input:focus {
+  background-color: #DCDCDC;
 }
 
 .input {
+  width: 372px;
+  height: 36px;
 }
 
 .inputWrapper {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .superInput {
+  background-color: greenyellow;
 }
 
 .errorInput {
+  border: 1px solid red;
 }
 
 .errorInput:focus {
+  background-color: #FDF5E6;
 }
 
 .error {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12.19px;
+  text-align: left;
+  color: #CC1439;
 }
