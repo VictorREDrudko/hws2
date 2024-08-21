@@ -43,6 +43,8 @@
 }
 
 .nav a.active {
+  color:blue;
+  text-decoration: underline;
 }
 .close {
   position: absolute;
