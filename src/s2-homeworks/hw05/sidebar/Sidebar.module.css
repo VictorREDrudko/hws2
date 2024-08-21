@@ -1,20 +1,4 @@
 .sidebar {
-  /* display: flex;
-  position: absolute;
-  flex-direction: column;
-  background-color: #FFFF;
-  width: 317px;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  padding: 15px; */
-
-  background-color: red;
-}
-
-.sidebar.open {
-  display: flex;
   position: absolute;
   flex-direction: column;
   background-color: #FFFF;
@@ -24,6 +8,12 @@
   left: 0;
   z-index: 100;
   padding: 15px;
+  display: none;
+}
+
+.sidebar.open {
+  display: flex;
+
 }
 
 .background {
