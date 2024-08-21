@@ -1,18 +1,20 @@
 .sidebar {
-  display: none;
-}
-
-.sidebar.open {
   position: absolute;
   display: flex;
   flex-direction: column;
   background-color: #FFFF;
   width: 317px;
   height: 100vh;
-  top: 0;
+  top: -1200px;
   left: 0;
   z-index: 100;
   padding: 15px;
+}
+
+.sidebar.open {
+
+  top: 0;
+  left: 0;
 }
 
 .background {
@@ -52,6 +54,10 @@
   color: #0059B2;
   text-decoration: underline;
 }
+
+/* .nav a.visible {
+  color: red;
+} */
 
 .close {
   width: 24px;
