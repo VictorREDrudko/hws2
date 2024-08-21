@@ -1,29 +1,28 @@
 .sidebar {
-  position: absolute;
-  flex-direction: column;
-  background-color: #FFFF;
-  width: 317px;
-  height: 100vh;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
-  padding: 15px;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
 }
 
 .sidebar.open {
-  display: flex;
-
+  transform: translateX(0);
 }
 
 .background {
-  background-color: #000000;
-  opacity: 0.3;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
 
 .nav {
