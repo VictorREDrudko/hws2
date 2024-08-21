@@ -1,25 +1,67 @@
 .sidebar {
+  display: none;
 }
 
 .sidebar.open {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFF;
+  width: 317px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 15px;
 }
 
 .background {
+  background-color: #000000;
+  opacity: 0.3;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .nav {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  margin-top: 20px;
 }
 
 .nav a {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.82px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.5s;
 }
 
 .nav a:hover {
+  color: #58ACFF;
 }
 
 .nav a.active {
+  color: #0059B2;
+  text-decoration: underline;
 }
+
 .close {
+  width: 24px;
+  height: 24px;
+  background-color: #FFFF;
+  border: none;
+  align-self: end;
 }
 
 .close img {
+  width: 24px;
+  height: 24px;
 }
