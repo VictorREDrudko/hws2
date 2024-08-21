@@ -1,6 +1,21 @@
 .sidebar {
+  /* display: flex;
   position: absolute;
-  display: none;
+  flex-direction: column;
+  background-color: #FFFF;
+  width: 317px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 15px; */
+
+  background-color: red;
+}
+
+.sidebar.open {
+  display: flex;
+  position: absolute;
   flex-direction: column;
   background-color: #FFFF;
   width: 317px;
@@ -9,10 +24,6 @@
   left: 0;
   z-index: 100;
   padding: 15px;
-}
-
-.sidebar.open {
-  display: flex;
 }
 
 .background {
@@ -41,9 +52,6 @@
   text-align: center;
   text-decoration: none;
   transition: all 0.5s;
-}
-
-.nav a.noneActive {
   color: #000000;
 }
 
