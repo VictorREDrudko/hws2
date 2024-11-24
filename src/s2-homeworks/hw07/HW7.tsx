@@ -12,13 +12,15 @@ import s from './HW7.module.css'
 * */
 
 const arr = [
-    { id: 1, value: 'x' },
-    { id: 2, value: 'y' },
-    { id: 3, value: 'z' },
+    { id: 1, value: 'pre-junior' },
+    { id: 2, value: 'junior' },
+    { id: 3, value: 'junior +' },
 ] // value может быть изменено
 
 const HW7 = () => {
-    const [value, onChangeOption] = useState(1) // селект и радио должны работать синхронно
+    const [value, onChangeOption] = useState(3) // селект и радио должны работать синхронно
+
+    console.log('HW7' + ' ' + value)
 
     return (
         <div id={'hw7'}>

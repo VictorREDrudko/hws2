@@ -3,12 +3,12 @@
 }
 
 .input {
-  width: 372px;
-  height: 36px;
+  /* width: 372px;
+  height: 36px; */
 }
 
 .inputWrapper {
-  margin-left: 70px;
+  /* margin-left: 70px; */
   display: flex;
   flex-direction: column-reverse;
 }
